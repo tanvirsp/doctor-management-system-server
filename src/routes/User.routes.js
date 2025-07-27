@@ -6,7 +6,9 @@ const UserController = require("../controllers/UserController")
 
 
 
-router.post("/create-user", UserController.CreateUser   )
+router.post("/create-user", UserController.CreateUser )
+router.post("/login", UserController.Login )
+router.get("/logout", UserController.Logout )
 
 
 
