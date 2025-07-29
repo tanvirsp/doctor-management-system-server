@@ -15,6 +15,7 @@ const dataSchema = mongoose.Schema({
     },
     password:{type:String, required: true},
     role:{type:String, default: "patient"},
+    picture:{type:String, default: "https://i.ibb.co/kVS6DV1j/user.png"},
 
 }, {timestamps:true, versionKey:false})
 

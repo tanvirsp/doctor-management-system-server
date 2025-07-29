@@ -15,9 +15,15 @@ router.post("/login", UserController.Login )
 router.get("/logout", UserController.Logout )
 router.post("/change-password", AuthVerification, UserController.ChangePassword )
 router.get("/send-otp/:email", UserController.SendOtp )
-
 router.get("/verify-otp/:email/:otp", UserController.VerifyOTP );
 router.post("/reset-password", UserController.ResetPassword );
+
+/*
+    TODO
+    -users details
+
+*/
+
 
 
 

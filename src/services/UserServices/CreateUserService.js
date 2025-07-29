@@ -23,12 +23,11 @@ const CreateUserService = async(req) =>{
                 role: data.role,
                 userId: data._id
             }
-            const token = EncodeToken(userData) 
+            const token = EncodeToken(userData)
+            userData.picture = data.picture
 
             return {status:"success", data: userData, token: token }
         }
-        
-
        
     } catch (error) {
         return {status:"fail",  data:error.toString()}   
