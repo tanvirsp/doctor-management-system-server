@@ -21,7 +21,7 @@ const CreateUserService = async(req) =>{
             const userData = {
                 email: data.email,
                 role: data.role,
-                id: data._id
+                userId: data._id
             }
             const token = EncodeToken(userData) 
 
